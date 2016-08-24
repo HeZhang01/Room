@@ -2,8 +2,9 @@
 #include <stdlib.h>
 
 /**
- * @author hezhang at 2016/08/24
- * @brief LRU算法是一种页面置换算法，其按照时间局部性的原则，认为在最近被访问的块(Page)在未来也有很高的概率被访问
+ * @author hezhang  
+ * @time   2016/08/24
+ * @brief  LRU算法是一种页面置换算法，其按照时间局部性的原则，认为在最近被访问的块(Page)在未来也有很高的概率被访问
  */
 
 struct node
