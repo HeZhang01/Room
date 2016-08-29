@@ -6,7 +6,7 @@
  * @time   2016/08/24
  * @brief  LRU算法是一种页面置换算法，其按照时间局部性的原则，认为在最近被访问的块(Page)在未来也有很高的概率被访问
  */
-
+/* define node and basic list method*/
 struct node
 {
 	int key;
@@ -52,6 +52,7 @@ struct node *outList(struct node *list,int key)
 	return NULL;
 }
 
+/* LRU */
 void set(int key, int val, struct node *list)
 {
 	struct node *newNode = (struct node *)malloc( sizeof(struct node) );
@@ -87,6 +88,4 @@ int main()
 	printf("%d, %d\n",list->after->after->key,list->after->after->val);
 	return 0;
 }
-
-
 
