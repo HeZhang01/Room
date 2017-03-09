@@ -24,6 +24,7 @@ struct node* getMax(struct node *s)
 }
 
 /* 元push */
+
 void _push(struct node *s, int data)
 {
 	if(s)
